@@ -43,6 +43,9 @@ def from_xml_file( filename ):
 
 class AutomataMachine:
     def __init__(self, description):
+        if description['type'] == "NFA":
+            raise ValueError("Convert Machine into DFA before creating AutomataMachine")
+        
         self.Type = description['type']
         self.State = description['start-state']
         self.Accept = description['final-state']
