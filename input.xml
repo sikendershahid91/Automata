@@ -22,8 +22,9 @@ regular Expressions
     <state>A,B,C</state>
     <alphabets>a,b</alphabets>
     <transition>
-      (a,b)->e
-      (b,c)->3
+      (A,b)->B
+      (A,a)->C
+      (C,b)->B
     </transition>
     <start-state>A</start-state>
     <final-state>B</final-state>
