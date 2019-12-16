@@ -1,0 +1,60 @@
+<!--
+This is XML document is used as the input to the file
+The following machines types can be made
+
+FA:
+Deterministic Finite Automata (DFA)
+Non-deterministic Finite Automata (NFA)
+
+RG:
+Context Free Grammer, CFG
+
+RE:
+regular Expressions
+
+-->
+
+
+<input>
+  <!-- MACHINE ONE-->
+  <FA>
+    <type>DFA</type>
+    <state>A,B,C</state>
+    <alphabets>a,b</alphabets>
+    <transition>
+      (a,b)->e
+      (b,c)->3
+    </transition>
+    <start-state>A</start-state>
+    <final-state>B</final-state>
+  </FA>
+  <!-- MACHINE TWO-->
+  <FA>
+    <type>NFA</type>
+    <state>
+      B,C,
+      v
+    </state>
+    <transition>
+      "not avilable "
+    </transition>
+  </FA>
+  <!-- GRAMMAR GENERATOR -->
+  <RG>
+    <type>CFG</type>
+    <terminal>
+      A,Hello, Start
+    </terminal>
+    <non-terminal>
+      a,b,c
+    </non-terminal>
+    <production>
+      A->a
+      B->Ba
+    </production>
+    <start>
+    </start>
+  </RG>
+  <RE>
+  </RE>
+</input>
