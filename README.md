@@ -24,7 +24,8 @@ run:
 sudo apt-get update && sudo apt-get install python3-pip
 ```
 
-
+XML file as input
+-------------------------------
 The input.xml file allows you to create as many machines and generators you would like
 to interact with. However its easier to keep things simple.
 
