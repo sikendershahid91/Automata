@@ -40,7 +40,7 @@ regular Expressions
       "not avilable "
     </transition>
   </FA>
-  <!-- GRAMMAR GENERATOR -->
+  <!-- GRAMMAR GENERATOR ONE -->
   <RG>
     <type>CFG</type>
     <terminal>
@@ -56,6 +56,28 @@ regular Expressions
     <start>
     </start>
   </RG>
+
+  <!-- GRAMMAR GENERATOR TWO -->
+  <RG>
+    <type>CFG</type>
+    <terminal>
+      S,A,B
+    </terminal>
+    <non-terminal>
+      a,b
+    </non-terminal>
+    <production>
+      S->AB
+      A->aA
+      B->Bb
+      A->a
+      B->b
+    </production>
+    <start>
+      S
+    </start>
+  </RG>
+  
   <RE>
   </RE>
 </input>
